@@ -1,0 +1,36 @@
+## Docker commands used to build the application 
+# TODO: insert the docker build command
+CMD: "docker build -t techtrends ."
+
+## Docker commands used to run the application
+# TODO: insert the docker run command
+CMD: "docker run -d -p 7111:3111 techtrends"
+
+## Docker commands used to get the application logs
+# TODO: insert the docker logs command
+CMD: "docker logs d82cc2f7494e"
+
+## Logs from the container running the TechTrends application
+# TODO: paste logs from the Docker container 
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+2021-09-01 06:01:06,842,  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+2021-09-01 06:01:11,962, 172.17.0.1 - - [01/Sep/2021 06:01:11] "GET / HTTP/1.1" 200 -
+2021-09-01 06:01:11,992, 172.17.0.1 - - [01/Sep/2021 06:01:11] "GET /static/css/main.css HTTP/1.1" 200 -
+2021-09-01 06:01:11,998, 172.17.0.1 - - [01/Sep/2021 06:01:11] "GET /favicon.ico HTTP/1.1" 404 -
+2021-09-01 06:03:41,628, Article "KubeCon + CloudNativeCon 2021" retrieved!
+2021-09-01 06:03:41,662, 172.17.0.1 - - [01/Sep/2021 06:03:41] "GET /2 HTTP/1.1" 200 -
+2021-09-01 06:03:44,346, 172.17.0.1 - - [01/Sep/2021 06:03:44] "GET / HTTP/1.1" 200 -
+2021-09-01 06:03:57,302, 172.17.0.1 - - [01/Sep/2021 06:03:57] "GET /create HTTP/1.1" 200 -
+2021-09-01 06:04:38,945, 172.17.0.1 - - [01/Sep/2021 06:04:38] "POST /create HTTP/1.1" 302 -
+2021-09-01 06:04:38,975, 172.17.0.1 - - [01/Sep/2021 06:04:38] "GET / HTTP/1.1" 200 -
+2021-09-01 06:04:45,950, Article "Test post" retrieved!
+2021-09-01 06:04:45,954, 172.17.0.1 - - [01/Sep/2021 06:04:45] "GET /7 HTTP/1.1" 200 -
+2021-09-01 06:04:48,623, 172.17.0.1 - - [01/Sep/2021 06:04:48] "GET / HTTP/1.1" 200 -
+2021-09-01 06:04:56,805, 172.17.0.1 - - [01/Sep/2021 06:04:56] "GET /metricd HTTP/1.1" 404 -
+2021-09-01 06:05:02,428, 172.17.0.1 - - [01/Sep/2021 06:05:02] "GET /metrics HTTP/1.1" 200 -
+2021-09-01 06:06:47,698, 172.17.0.1 - - [01/Sep/2021 06:06:47] "GET / HTTP/1.1" 200 -
+
